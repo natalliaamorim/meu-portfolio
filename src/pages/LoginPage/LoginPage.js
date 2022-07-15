@@ -2,7 +2,7 @@ import React from 'react'
 import {useNavigate } from 'react-router-dom'
 import { Controller, field, useForm } from 'react-hook-form';
 import { Banner, Container, Content } from './styled';
-import { useAuth } from '../../context/autho';
+import { useAuth } from '../../context/autho'; 
 
 
 const LoginPage = () =>{
@@ -12,7 +12,7 @@ const LoginPage = () =>{
 
   const navigate = useNavigate(); 
 
-  const UsuarioLogin = async (field) => {
+  const UsuarioLogin = async (field) => {  
     const { email, password } = data;
     const whitelabelId = '77';
 
